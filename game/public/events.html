@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="images/6084644-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay">
+        <a href="index.html"><button class="home">Home</button></a>
+        <h1 class="mainhead">Events</h1>
+    </div>
+
+    <div class="trailer1">
+        <video id="background-video1" autoplay loop muted>
+            <source src="images/BATTLEGROUNDS MOBILE INDIA SERIES 2023 _ Official Trailer.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <footer>
+        <div class="event-register">
+           <div> <img src="images/clash royal.jpg" alt=""></div>
+           <div class="des">
+            <h3>Clash  Royale</h3>
+            <a href="registrationform.html"><p>Standard Royal Tournament</p></div></a>
+        </div>
+
+        <div class="event-register">
+            <div> <img src="images/bgmi1.jpg" alt=""></div>
+            <div class="des">
+             <h3>Battlegrounds Mobile India</h3>
+             <a href="registrationform.html"> <p> Battlegrounds Mobile India Series 2024</p></div></a>
+        </div>
+
+        <div class="event-register">
+            <div> <img src="images/gameofthrones.jpg" alt=""></div>
+            <div class="des">
+             <h3>Game Of Thrones</h3>
+             <a href="registrationform.html"> <p> Heir's Tournament</p></div></a>
+        </div>
+
+        <div class="event-register">
+            <div> <img src="images/valo.jpg" alt=""></div>
+           <div class="des">
+            <h3> Valorant</h3>
+            <a href="registrationform.html"><p>Mighty Midgets Celtics Tournament Goolwa Cup</p></div></a>
+        </div>
+    </footer>
+
+    <script>
+
+let slider = document.querySelector('.event-slider');
+let slides = document.querySelectorAll('.slide');
+let counter = 1;
+
+function carousel() {
+    slider.style.transition = 'transform 0.5s ease-in-out';
+    slider.style.transform = 'translateX(' + (-300 * counter) + 'px)';
+    counter++;
+
+    if (counter === slides.length) {
+        counter = 0;
+        setTimeout(() => {
+            slider.style.transition = 'none';
+            slider.style.transform = 'translateX(0px)';
+        }, 1000); // Adjust the delay based on slide transition speed
+    }
+}
+
+setInterval(carousel, 3000); // Adjust the time for changing slides (in milliseconds)
+
+    </script>
+    
+</body>
+</html>

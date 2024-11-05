@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot</title>
+<style>
+  h1{
+    font-size: 80px;
+    text-align: center;
+    text-shadow:  0 0 10px rgb(0, 217, 255) , 0 0 20px lightblue , 0 0 20px rgb(42, 73, 101);;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #120505;
+  }
+  .chat-container {
+    max-width: 1000px;
+    height: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(93, 93, 142) , 0 0 20px lightblue , 0 0 20px blueviolet;;
+    background-color: #fff;
+  }
+  .chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  .chat-input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: none;
+    border-top: 1px solid #ccc;
+    outline: none;
+  }
+  .chat-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1 style="color: #fff;">Support</h1>
+<div class="chat-container">
+  <div class="chat-box" id="chat-box"></div>
+  <input type="text" class="chat-input" id="user-input" placeholder="Type a message...">
+  <button class="chat-btn" onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+  function sendMessage() {
+    var userInput = document.getElementById('user-input').value;
+    if (userInput.trim() !== '') {
+      appendMessage(userInput, true);
+      // Here you can add code to send the user's message to your backend for processing
+      // and receive the response to display it back to the user.
+      document.getElementById('user-input').value = '';
+    }
+  }
+
+  function appendMessage(message, isUser) {
+    var chatBox = document.getElementById('chat-box');
+    var messageDiv = document.createElement('div');
+    messageDiv.className = isUser ? 'message user' : 'message bot';
+    messageDiv.innerText = message;
+    chatBox.appendChild(messageDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+</script>
+</body>
+</html>

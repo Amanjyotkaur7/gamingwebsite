@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultron Gaming WebSite</title>
+    <link rel="stylesheet" href="webpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>   
+        $(document).ready(function(){
+        $("#sub").click(function(){
+        $("li").slideToggle();
+        });
+    });
+
+    
+    $(document).ready(function(){
+         $("#id1").click(function(){
+            $("#id1").css("margin-left","30px");
+        });
+
+        $("#id2").click(function(){
+            $("#id2").css("margin-left","30px");
+            $(".eff").css("margin-left","10px");
+            
+        });
+    });
+
+    $(document).ready(function(){
+    $(".card").hover(
+        function() {
+            // $(this).css("box-shadow", "0 0 10px hsl(0, 42%, 17%), 0 0 20px hsl(5, 63%, 11%), 0 0 30px hsl(35, 70%, 9%)");
+            $(this).css("transform", "scale(1.1)");
+        },
+        function() {
+            // $(this).css("box-shadow", "none");
+            $(this).css("transform", "scale(1)");
+        }
+    );
+});
+ </script>
+
+
+  </style>
+</head>
+<body>
+
+    <header>
+
+<aside>
+    <h1>Ultron 
+    <i class="bi bi-controller"></i>
+</h1>
+
+<button>Get Ultron Prime</button>
+
+<ul id="slide">
+    <li class=" active_li">
+        <a href="#" class="eff" id="id1"> <i class="bi bi-archive"></i>
+        Browse</a>
+    </li>
+
+<li>
+    <a href="events.html" class="eff" id="id3"><i class="bi bi-calendar-date-fill"></i>
+    Events</a>
+</li>
+
+
+
+
+
+<li>
+    <a href="store.html" class="eff" id="id6"><i class="bi bi-bookmark-star-fill"></i>
+    Store</a>
+</li>
+<li>
+    <a href="about.html" class="eff" id="id4"><i class="bi bi-people-fill"></i>
+    About Us</a>
+
+</li>
+
+<li>
+    <a href="support.html" class="eff" id="id5"><i class="bi bi-chat-left-dots"></i>
+    Support</a>
+</li>
+</ul>
+
+<!-- subscription box -->
+<div class="subscription">
+<h5 id="sub">Subscriptions</h5>
+<div class="cards">
+
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/WhatsApp Image 2024-02-01 at 21.23.57.jpeg" alt="">
+        </div>
+        <div class="text"><h6>Amanjyot Kaur </h6><p>Fortnite</p></div>
+    </div>
+
+
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/jack.jpg" alt="">
+        </div>
+        <div class="text"><h6>Jack</h6><p>Mili Militia</p></div>
+    </div>
+
+
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/narith.jpg" alt="">
+        </div>
+        <div class="text"><h6>narith </h6><p>GTA 4</p></div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/ryan.jpg" alt="">
+        </div>
+        <div class="text"><h6>Ryan</h6><p>Valorant</p></div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/TommyIinnt.jpg" alt="">
+        </div>
+        <div class="text"><h6>Tommy Innit </h6><p>Minecraft</p></div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/jordan.jpg" alt="">
+        </div>
+        <div class="text"><h6>Jordan </h6><p>League of Leagends</p></div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/victoria.jpg" alt="">
+        </div>
+        <div class="text"><h6>Victoria swift</h6><p>Call of Duty</p></div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="images/pinkpanther.jpg" alt="">
+        </div>
+        <div class="text"><h6>Pink Panther </h6><p>Call of Duty</p></div>
+    </div>
+
+
+</div>
+        
+</div>
+
+</aside>
+
+<article>
+    <nav> <a href="login.html"><button id="new">Login</button></a>
+  
+        <div class="search" style="border-radius: 15px; background-color: rgb(239, 226, 230);"><i class="bi bi-search-heart-fill"></i> <input type="text" placeholder="     Search ..." style="border-radius: 15px ; margin-left: 10%; background-color: rgb(242, 233, 247);"></div></nav>
+
+
+        <!-- game box start -->
+
+        <div class="game1"> 
+            <h3>   Recommended for you</h3>
+            <div class="game_bx">
+                <div class="card">
+                    <a href="lol.html"><img src="images/ll.png" alt="league of legends"></a>
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>league of legends</h5>
+                            <h6>4.1  <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>3,500 </h6>
+
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <a href=""><img src="images/gta.jpg" alt="gta"></a>
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>Grand theif Auto V</h5>
+                            <h6>4.7  <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>5,000 </h6>
+                    </div>
+            
+                </div>
+                <div class="card">
+                    <a href=""><img src="images/fortnite.jpg" alt="fortnite"></a>
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>Fortnite</h5>
+                            <h6>4.5 <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>5,999 </h6>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <img src="images/beach buggy.jpg" alt="bbr">
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>Beach Buggy Racing</h5>
+                            <h6 style="color: rgb(205, 214, 37);">3.2  <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>1,999</h6>
+                    </div>
+
+                </div>
+                <div class="card"> 
+                    <img src="images/hollow knight.jpg" alt="hollow knight">
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>Hollow knight </h5>
+                            <h6 style="color: rgb(227, 102, 44);">2.9 <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>1,500</h6>
+                    </div>
+                </div>
+                <div class="card">  
+                    <img src="images/GOW.jpg" alt="gta">
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>God of war</h5>
+                            <h6>4.4 <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>4,500 </h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/WoC.jpg" alt="gta">
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>XCOM War of the chosen</h5>
+                            <h6 style="color: rgb(205, 214, 37);">3.7  <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>3,500 </h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/minecradt.jpg" alt="Minecraft">
+                    <div class="game_info">
+                        <div class="left">
+                            <h5>Minecraft</h5>
+                            <h6>4.3 <i class="bi bi-star-fill"></i></h6>
+                        </div>
+                        <h6> <i class="bi bi-currency-rupee"></i>2,000 </h6>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- game2 bax start --> 
+
+        <div class="game2">
+            <h3>Most Played </h3>
+      
+        <div class="games_bx">
+            <div class="card">
+                <img src="images/among us.jpg" alt="">
+                <div class="content">
+                    <h6>Among Us</h6>
+                    <p>5468 Streamers</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="images/clashr.jpg" alt="">
+                <div class="content">
+                    <h6>Clash Royal</h6>
+                    <p>6700 Streamers</p>
+                </div> 
+            </div>
+
+            <div class="card">
+
+                <img src="images/bgmi1.jpg" alt="">
+                <div class="content">
+                    <h6>Bgmi</h6>
+                    <p>9900 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="images/minim.jpg" alt="">
+                <div class="content">
+                    <h6>Mini Militia</h6>
+                    <p>9468 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/minecraft.jpg" alt="">
+                <div class="content">
+                    <h6>Minecraft</h6>
+                    <p>8968 Streamers</p>
+                </div>
+            </div>
+            <div class="card"><img src="images/8ballpool.jpg" alt="">
+                <div class="content">
+                    <h6>8 ball pool</h6>
+                    <p>8781 Streamers</p>
+                </div></div>
+            <div class="card">
+                <img src="images/Talking tom.jpg" alt="">
+                <div class="content">
+                    <h6>Talking Tom</h6>
+                    <p>6785 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/gameofthrones.jpg" alt="">
+                <div class="content">
+                    <h6>Game Of thrones</h6>
+                    <p>8999 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Hades.jpg" alt="">
+                <div class="content">
+                    <h6>Hades</h6>
+                    <p>7000 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/dead rising.jpg" alt="">
+                <div class="content">
+                    <h6>Dead Rising 2</h6>
+                    <p>3450 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Ludo king.jpg" alt="">
+                <div class="content">
+                    <h6>Ludo King</h6>
+                    <p>3468 Streamers</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cod.jpg" alt="">
+                <div class="content">
+                    <h6>Call of duty</h6>
+                    <p>7418 Streamers</p>
+                </div>
+            </div>
+            <div class="card"><img src="images/sn.jpg" alt="">
+                <div class="content">
+                    <h6>Secret Neighbour</h6>
+                    <p>1468 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/sherloack.jpg" alt="">
+                <div class="content">
+                    <h6>sherlock Holmes</h6>
+                    <p>2200 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/township.jpg" alt="">
+                <div class="content">
+                    <h6>Township</h6>
+                    <p>1468 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/Asphlate.jpg" alt="">
+                <div class="content">
+                    <h6>Asphlate</h6>
+                    <p>4467 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/roblox.jpg" alt="">
+                <div class="content">
+                    <h6>Roblox</h6>
+                    <p>7200 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/angrybirds.jpg" alt="">
+                <div class="content">
+                    <h6>Angry birds</h6>
+                    <p>4590 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/hillclimb.jpg" alt="">
+                <div class="content">
+                    <h6>Hill Climbing Racing</h6>
+                    <p>3543 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/prubleplace.jpg" alt="">
+                <div class="content">
+                    <h6>Purble place</h6>
+                    <p>7128 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/valo.jpg" alt="">
+                <div class="content">
+                    <h6>Valorant</h6>
+                    <p>3600 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/pockett.jpg" alt="">
+                <div class="content">
+                    <h6>Pocket Tanks</h6>
+                    <p>4370 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/Tr2.jpg" alt="">
+                <div class="content">
+                    <h6>Temple run 2</h6>
+                    <p>6890 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/avatar.jpg" alt="">
+                <div class="content">
+                    <h6>Avatar The Game</h6>
+                    <p>2344 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/poke.jpg" alt="">
+                <div class="content">
+                    <h6>Pokemon Go</h6>
+                    <p>3478 Streamers</p>
+                </div></div>
+            <div class="card"><img src="images/mm.jpg" alt="">
+                <div class="content">
+                    <h6>Murder Society 2</h6>
+                    <p>2488 Streamers</p>
+                </div></div>
+            <div class="card">
+                <img src="images/criminal case.jpg" alt="">
+                <div class="content">
+                    <h6>Criminal Case</h6>
+                    <p>3498 Streamers</p>
+                </div>
+            </div>
+           
+
+
+
+
+
+        </div>
+    </div>
+                                   
+</article>
+    </header>
+
+   
+    
+    
+
+    <script src="/webpage.css"></script>
+</body>
+</html>

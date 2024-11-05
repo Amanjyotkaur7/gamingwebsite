@@ -1,0 +1,965 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --color-1: #262b3f;
+    --color-2: #fff;
+    --color-3: #1e2337;
+    --color-4: #rgb(255,255,255,.5);
+    --color-5:greenyellow;
+
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #1e2337;
+    
+   
+    font-family:'poppins',sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    /* position: absolute;
+    bottom: -700px; */
+    width:85%;
+    height: 95%;
+    box-shadow:0 0 10px hsl(0, 42%, 17%), 0 0 20px hsl(5, 63%, 11%), 0 0 30px hsl(35, 70%, 9%); ;
+    border-radius: 10px;
+    display: flex;
+}
+
+header aside, article{
+    width:85%;
+    height:100%;
+    /* border: 1px solid #fff; */
+    border-radius: 0px,20px,20px,0px;
+    background: var(--color-3);
+}
+header aside{
+    width: 15%;
+    border-radius: 20px,0px,0px,20px;
+    background-color: rgb(117, 91, 133) ;
+
+}
+
+header aside h1{
+    /* border: 1px solid #fff; */
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    font-size: 24px;
+    font-weight: 800;
+}
+header aside h1 i{
+    margin: 5px;
+}
+
+header aside button {
+    background-color: #440935d6;
+    color:rgba(255, 255, 255, 0.712);
+    transition:.24s linear;
+    font-size: 15px;
+    font-family: poppins,sans-serif;
+    margin-top: 5px;
+    margin: auto;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+header aside button:hover{
+    background-color: #140206db;
+}
+
+header aside ul{
+    position: relative;
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 13px;
+    padding-bottom: 20px;
+
+}
+
+header aside ul::before{
+    position: absolute;
+    content: '';
+    width: 88%;
+    height: 2px;
+    background: rgb(184,184,184,.1);
+    bottom:0;
+
+}
+
+header aside ul li{
+    padding:2.5px 0px;
+}
+
+header aside ul li a{
+    text-decoration:none;
+    color: aliceblue;
+    font-family: poppins,sans-serif;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+header aside ul li a:hover{
+    color: rgb(57, 39, 108);
+    text-shadow: 0 0 10px hsl(188, 67%, 75%), 0 0 20px hsl(192, 80%, 75%), 0 0 30px hsl(192, 76%, 71%);
+}
+
+header aside ul li a i{
+    margin-right: 10px;
+}
+header aside ul .active_li{
+    border-right: 3px solid #fff;
+} 
+
+header aside ul .active_li a{
+    color:#fff;
+    font-size: 14px;
+} 
+header aside .subscription{
+width: 99%;
+height:auto;
+/* border: #fff solid 1px; */
+margin-top: 15px;
+margin-left: 12%;
+margin-right: 12%;
+}
+header aside .subscription h5{
+color: #fff;
+font-size: 12px;
+font-weight: 600;
+}
+header aside .subscription .cards{
+ width: 88%;
+ height: 305px;
+ /* border:1px solid #fff; */
+ overflow-x: auto;
+ margin-top: 15px;
+}
+header aside .subscription .cards::-webkit-scrollbar{
+ width: 5px;
+background: #b794b9c2;
+border-radius: 20px;
+visibility: hidden;
+transition: .3s linear;
+}
+header aside .subscription .cards:hover::-webkit-scrollbar{
+
+visibility: visible;
+}
+
+header aside .subscription .cards::-webkit-scrollbar-thumb{
+ width: 5px;
+background: hsla(300, 3%, 94%, 0.761);
+border-radius: 20px;
+visibility: hidden;
+transition: .3s linear;
+}
+header aside .subscription .cards:hover::-webkit-scrollbar-thumb{
+ 
+visibility: visible;
+}
+header aside .subscription .cards .card{
+ margin-bottom: 10px;
+ /* border:1px solid #fff; */
+ display: flex;
+ align-items: center; 
+}
+header aside .subscription .cards .card .imgbox{
+ width: 35px;
+ height: 35px;
+ border-radius: 50%;
+ position: relative;
+}
+header aside .subscription .cards .card .imgbox::before{
+ content: "";
+ width: 7px;
+ height: 7px;
+ background: greenyellow;
+ border:3px solid  rgb(117, 91, 133);
+ border-radius: 50%;
+ position: absolute;
+ top: 18px;
+ right: -5px;
+}
+header aside .subscription .cards .card .imgbox img{
+ width: 35px;
+ height: 35px;
+ border-radius: 50%;
+}
+header aside .subscription .cards .card .text h6{
+ color: #fff;
+ width: 100px;
+ font-size: 10px;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ overflow: hidden;
+}
+header aside .subscription .cards .card .text p{
+ color: #a7a0a0;
+ width: 100px;
+ font-size: 8px;
+ font-weight: 700;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ overflow: hidden;
+}
+header aside .subscription .cards .card .text {
+ margin-left: 8px;
+}
+
+
+header article nav{
+    width : 100%;
+    height: 9%;
+    /* border: solid #fff 1px; */
+    border-radius: 30px 10px 30px 0px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#b794b9c2;
+    margin-left: 18px;
+    margin-right: 18px;
+    box-shadow:0 0 5px hsl(0, 42%, 17%), 0 0 10px hsl(5, 63%, 11%), 0 0 10px hsl(0, 47%, 7%); ;
+
+}
+header article nav button{
+   padding: 7px 20px;
+   border-radius: 50px;
+   border: none;
+   outline: none; 
+   color: #fff;
+   font-family: 'poppins',sans-serif;
+   font-weight: 400;
+   box-shadow:0 0 5px hsl(226, 26%, 41%), 0 0 10px hsl(190, 26%, 68%), 0 0 10px hsl(0, 6%, 84%); ;
+
+
+}
+#new{
+    background-color :#440935d6;
+}
+header article nav .search{
+   width: 40%;
+   background:var(--color-3) ;
+   padding: 4px 10px;
+   transition: .3s linear;
+
+}
+
+header article nav .search input{
+    outline: none;
+    transition: .5s linear;
+    padding: 0px 10px;
+    background: none;
+    /* border:none; */
+    border:1px slategrey solid;
+
+ }
+
+ header article nav .search input::placeholder{
+    color: var(--color-3);
+    font-family: 'poppins',sans-serif;
+    font-size: 12px;
+    transition: .5s linear;
+ }
+
+/* game box */
+
+header article .game1{
+    position: relative;
+    width:100%;
+    height: 200px;
+    /* border: 1px solid #fff; */
+    /* padding: px 30px; */
+    margin-top: 20px;
+    /* padding-left: 10px; */
+}
+header article .game1 .game_bx .card:nth-child(1) {
+    margin-left: 10px;
+ 
+ }
+
+ header article .game1 .game_bx .card:nth-last-child(1) {
+    margin-right: 30px;
+ 
+ }
+
+header article .game1 h3{
+    color:#fff;
+    font-size: 17px;
+    font-weight: 700;
+    transition: .5s linear;
+    margin-left: 30px;
+}
+header article .game1 .game_bx{
+    width: 100%;
+    height: 175px;
+    /* border: 1px solid #fff; */
+    transition: .3s linear;
+    display:flex;
+    align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding-left: 4px;
+
+}
+
+header article .game1 .game_bx::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+header article .game1 .game_bx .card {
+    min-width: 230px;
+    height: 160px;
+    /* border: 1px solid #7cb78f; */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right:20px ;
+
+}
+
+header article .game1 .game_bx .card img {
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+
+}
+
+header article .game1 .game_bx .card:nth-last-child(1) {
+   margin-right: 2px;
+
+}
+
+header article .game1 .game_bx .card .game_info {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    color: var(--color-2);
+    margin-top: -5px;
+    transition: .5s linear;
+
+}
+
+header article .game1 .game_bx .card .game_info .left{
+    
+    color: var(--color-2);
+    transition: .5s linear;
+
+}
+
+header article .game1 .game_bx .card .game_info .left h5{
+    
+   font-size: 12px;
+   font-weight: 500;
+   width: 150px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+   transition: .5s linear;
+   padding-left: 4px;
+}
+
+header article .game1 .game_bx .card .game_info .left h6{
+    
+    font-size: 10px;
+    font-weight: 450;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    color: #a6ed6ddb;
+    transition: .5s linear;
+    padding-left: 4px;
+ }
+ 
+ header article .game1 .game_bx .card .game_info  h6{
+    
+    font-size: 10px;
+    color: #c7cbc3db;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    padding-top: 2px;
+    padding-right: 4px;
+   
+    transition: .5s linear;
+   
+ }
+
+ /* box2 */
+
+ header article .game2{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    /* border: 1px solid #fff; */
+    padding: 0px 30px;
+    overflow: hidden;
+    
+ }
+
+ header article .game2 h3{
+    
+    color: var(--color-2);
+    font: 14px;
+    font-weight: 600;
+    transition:.5s linear;
+ }
+ header article .game2 .games_bx{
+    width:100%;
+    height: 350px;
+    /* border:1px solid #fff; */
+    /* box-shadow:0 0 10px hsl(213, 97%, 12%), 0 0 20px hsl(196, 72%, 80%), 0 0 30px hsl(216, 50%, 43%); ; ; */
+    margin-top: 8px;
+    display:flex; 
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    overflow-y:auto;
+
+
+ }
+
+ header article .game2 .games_bx::-webkit-scrollbar{
+    
+    width: 5px;
+    border-radius: 20px;
+    background: rgb(184,184,184,.2);
+
+ }
+ header article .game2 .games_bx::-webkit-scrollbar-thumb{
+    
+   
+    border-radius: 20px;
+    background: rgb(184,184,184,.7);
+
+ }
+
+ header article .game2 .games_bx .card{
+   width: 100px;
+   height: 170px;
+   /* border: 1px solid #fff; */
+   margin: 3px 5px 11px 0px;
+   /* box-shadow:0 0 7px hsl(213, 97%, 12%), 0 0 7px hsl(196, 72%, 80%), 0 0 7px hsl(216, 50%, 43%); ; ; */
+
+ }
+
+ header article .game2 .games_bx .card:nth-child(1){
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+ header article .game2 .games_bx .card:nth-child(10){
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+
+ header article .game2 .games_bx .card:nth-child(19){
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+
+ header article .game2 .games_bx .card:nth-child(9){
+    margin-right: 10px;
+    margin-bottom: 10px;
+ }
+ header article .game2 .games_bx .card:nth-child(18){
+    margin-right: 10px;
+    margin-bottom: 10px;
+ }
+ header article .game2 .games_bx .card:nth-child(27){
+    margin-right: 10px;
+    margin-bottom: 10px;
+ }
+
+
+ header article .game2 .games_bx .card img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+
+  }
+
+  header article .game2 .games_bx .card .content{
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    
+  }
+
+  header article .game2 .games_bx .card .content h6{
+    width: 100%;
+   color: var(--color-2);
+   text-overflow: ellipsis ;
+   white-space: nowrap;
+   overflow: hidden;
+   transition: .5s linear;
+  }
+
+  header article .game2 .games_bx .card .content p{
+    width: 100%;
+    font-size: 9px;
+    font-weight:500s;
+   color: gray;
+   text-overflow: ellipsis ;
+   white-space: nowrap;
+   overflow: hidden;
+   transition: .5s linear;
+  }
+ 
+.con2{
+    display: flex;
+    color:wheat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1500px;
+    left: 0px;
+    align-items: center;
+    
+}
+
+.con2 .subcon{
+   
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right:auto;
+    background-image: url('/images/COD2.jpg');
+    background-repeat: no-repeat;
+   background-size: 100%;
+   box-shadow:0 0 30px hsl(310, 43%, 17%), 0 0 40px hsl(280, 44%, 80%), 0 0 30px hsl(280, 40%, 44%); ;
+   
+    
+}
+
+/* downloadpage start */
+
+
+header article .download_related_box{
+    width:100%;
+    height:91%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header article .download_related_box .download_box, .related_box{
+    width:45%;
+    height:100%;
+    /* border: 1px solid #fff; */
+}
+
+header article .download_related_box .download_box{
+    width:55%;
+    padding:0px 20px ;
+   
+}
+
+header article .download_related_box .download_box .img_video_box{
+    position: relative;
+   width: 100%;
+   height: 50%;
+   /* border: 1px solid #fff; */
+   border-radius: 20px;
+   margin-top: 20px;
+   transition: 1s linear;
+  
+
+
+
+}
+
+header article .download_related_box .download_box .img_video_box h6{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url('/images/ll.png') no-repeat center center/cover;
+    transition: 1s linear;
+
+
+}
+
+header article .download_related_box .download_box .img_video_box h6{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url('/game/public/images/ll.png') no-repeat center center/cover;
+    transition: 1s linear;
+
+
+}
+
+header article .download_related_box .download_box .img_video_box video {
+   
+   position: absolute;
+   top:0%;
+   left: 0%;
+   width:100%;
+   height: 100%;
+   border-radius:20px;
+   display: none;
+
+
+}
+
+header article .download_related_box .download_box h4 {
+   
+    margin-top: 30px;
+    color: var(--color-2);
+    font-size: 16px;
+    font-weight: 500;
+
+ 
+ 
+ }
+
+ header article .download_related_box .download_box ul {
+   
+    list-style-type: none;
+    color: var(--color-2);
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    margin-top: 20px;
+ 
+ 
+ }
+
+ header article .download_related_box .download_box ul li {
+
+ width: 50%;
+ color: var(--color-2);
+ font-size: 13px;
+ font-weight: 400;
+padding: 5px 0px;
+ letter-spacing: .3px;
+ }
+ 
+ header article .download_related_box .download_box ul li:nth-child(2n){
+
+    padding-left: 20px;
+    }
+
+    header article .download_related_box .download_box ul li i{
+
+        padding-right: 5px;
+        }
+    
+        header article .download_related_box .download_box .btns{
+
+          display: flex;
+          align-items: center;
+          margin-top: 30px;
+            }
+
+     header article .download_related_box .download_box .btns a{
+                padding: 5px 20px;
+                text-decoration: none;
+                color: #fff;
+                background: #b794b9c2;
+                font-weight: 600;
+                font-size: 13px;
+                border-radius: 5px;
+                margin-right: 10px;
+                transition: .3s linear;
+                display: flex;
+                align-items: center;
+            }
+
+            header article .download_related_box .download_box .btns a:hover{
+                background: #262b3f;
+            }
+        
+     
+            header article .download_related_box .download_box .btns a i{
+                margin-right: 5px;
+                font-size: 18px;
+            }
+
+            header article .download_related_box .related_box h4{
+                margin-top: 20px;
+                color: var(--color-2);
+                font-size: 14px;
+                font-weight: 500;
+                padding: 0px 8px;
+            }
+            header article .download_related_box .related_box .cards{
+                width: 100%;
+                height: 55%;
+                /* border: 1px solid #fff; */
+                padding: 10px 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                overflow: auto;
+            }
+
+            header article .download_related_box .related_box .cards::-webkit-scrollbar{
+                
+            width: 5px;
+            background: rgb(184, 184, 184,.2);
+            border-radius: 20px;
+            
+            
+            }
+
+            
+            header article .download_related_box .related_box .cards::-webkit-scrollbar-thumb{
+                
+                
+                background: rgb(184, 184 ,184, .8);
+                border-radius: 20px;
+                visibility: hidden;
+                
+                }
+
+                header article .download_related_box .related_box .cards:hover::-webkit-scrollbar{
+                
+                visibility: visible;
+                    
+                    }
+
+                    header article .download_related_box .related_box .cards:hover::-webkit-scrollbar-thumb{
+                
+                        visibility: visible;
+                            
+                            }
+
+            header article .download_related_box .related_box .cards .card{
+                width: 48%;
+                height: 155px;
+                /* border: 1px solid #fff; */
+                margin-bottom: 15px;
+                
+                
+            }
+
+            header article .download_related_box .related_box .cards .card img{
+                width: 100%;
+                height: 80%;
+                border-radius: 10px;
+               
+                
+            }
+
+
+            header article .download_related_box .related_box .cards .card .content{
+                width: 100%;
+                height: 20%;
+                margin-left:5px ;
+
+               
+                
+            }
+
+            header article .download_related_box .related_box .cards .card .content h6{
+                color: var(--color-2);
+                font-size: 12px;
+                font-weight: 400;
+                margin-top: -5px;
+
+               
+                
+            }
+
+
+            header article .download_related_box .related_box .cards .card .content p{
+                color: grey;
+                font-size: 10px;
+            
+                
+            }
+
+            header article .download_related_box .related_box .join_new_mem {
+                width: 100%;
+                height: 100%;
+                /* border :1px solid white; */
+                margin-top:30px ;
+                overflow: auto;
+                
+            }
+
+            header article .download_related_box .related_box .join_new_mem::-webkit-scrollbar {
+               display: none;
+            
+                
+            }
+
+            header article .download_related_box .related_box .join_new_mem .card {
+               
+            width: 90%;
+            height: 100px;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10px;
+                
+            }
+
+            header article .download_related_box .related_box .join_new_mem .card img {
+               
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                margin: 30px;
+                
+                    
+                }
+
+                header article .download_related_box .related_box .join_new_mem .card p,.review {
+               
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 20px;
+                        
+                    }
+
+                    header article .download_related_box .related_box .join_new_mem .card .rating {
+               
+                        color: #fff;
+                        font-size: 16px;
+                        margin-top: 20px;
+                        margin-left: 40px;
+                            
+                    }
+
+                    header article .download_related_box .related_box .join_new_mem .card h6 {
+               
+                            color: #ffffffb8;
+                            font-size: 10px;
+                            /* margin-top: 20px; */
+                            padding-top: 0px;
+                        }
+                        
+                     header article .download_related_box .related_box .join_new_member {
+                            width: 100%;
+                            height: 150px;
+                            /* border: 1px solid white; */
+                            overflow: auto;
+                            margin-top: 25px;
+
+
+                         }
+
+                         header article .download_related_box .related_box .join_new_member::-webkit-scrollbar{
+                           display: none;
+                            
+
+                         }
+                         
+                         header article .download_related_box .related_box .join_new_member .card {
+                            width: 100%;
+                            height: 50px;
+                            /* border: 1px solid white; */
+                            display: flex;
+                            align-items: center;
+
+
+                         }
+
+                          
+                         header article .download_related_box .related_box .join_new_member .card img{
+                            width: 40px;
+                            height: 40px;
+                            /* border: 1px solid white; */
+                            border-radius: 10px;
+                            margin-left: 25px;
+
+                         }
+
+                         header article .download_related_box .related_box .join_new_member .card .content{
+                        margin-left: 15px;
+                        width: 95%;
+
+                         }
+
+
+                         header article .download_related_box .related_box .join_new_member .card .content .h6_price{
+                          
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+
+                             }
+                        
+                             header article .download_related_box .related_box .join_new_member .card .content .h6_price h5{
+                          
+                                color: #fff;
+                                font-weight:500 ;
+                                width:170px;
+                                /* border: 1px solid #fff; */
+                                /* margin-left: 15px; */
+
+
+    
+                                 }
+
+                                 header article .download_related_box .related_box .join_new_member .card .content .h6_price  span{
+                          
+                                    color: greenyellow;
+                                    font-weight:500 ;
+                                    width:110px ;
+                                    /* border: 1px solid #fff; */
+                                    font-size: 10px;
+    
+    
+        
+                                     }
+
+                                     
+                                 header article .download_related_box .related_box .join_new_member .card .content .h6_price h6{
+                          
+                                    color: greenyellow;
+                                    font-weight: 600;
+                                    margin-right: 35px;
+        
+                                     }
+
+                                     header article .download_related_box .related_box .join_new_member .card .content p{
+                          
+                                        color: greenyellow;
+                                        font-size: 12px;
+                                        font-weight: 400;
+            
+                                         }
+                        
+
+    
+                        
+
+    
+
+    
+            
+
+        
+
+
+
+
+
+
